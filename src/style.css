@@ -16,3 +16,61 @@ body
 {
   overflow: hidden;
 }
+
+@font-face {
+  font-family: hikasami;
+  src: url("/fonts/hikasami/Hikasami-VF.woff2") format("woff2");
+}
+
+.about-container {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  /* background-color: white; */
+  width: 16vmax;
+  height: 22vmin;
+  z-index: 999;
+  margin-bottom: 3vmin;
+  margin-left: 2vmax;
+}
+
+.about-button {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  /* background-color: red; */
+  color: white;
+  width: 10vmax;
+  height: 4vmin;
+  font-family: hikasami;
+  font-weight: 400;
+  font-size: 0.875vmax;
+  text-align: left;
+  line-height: 4vmin;
+  cursor: pointer;
+  transition: font-weight 0.75s ease-in-out, color 0.75s ease-in-out;
+}
+
+.about-text {
+  position: absolute;
+  left: 0%;
+  top: 8vmin;
+  /* background-color: blue; */
+  color: white;
+  width: 16vmax;
+  height: 10vmin;
+  font-family: hikasami;
+  font-weight: lighter;
+  font-size: 0.75vmax;
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.about-button:hover {
+  font-weight: 500;
+  color: #ffa600;
+}
+
+.about-button:hover + .about-text {
+  opacity: 0.75;
+}
